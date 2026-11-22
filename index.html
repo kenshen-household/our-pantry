@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Pantry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ============ Top bar ============ -->
+  <header>
+    <div class="title-row">
+      <h1>🥫 Our Pantry</h1>
+      <button id="refresh-btn" class="ghost small" title="Get the latest changes">↻ Refresh</button>
+    </div>
+    <p id="sync-status" class="status"></p>
+    <nav>
+      <button class="tab" data-tab="pantry">Pantry</button>
+      <button class="tab" data-tab="recipes">Cookbook</button>
+      <button class="tab" data-tab="shopping">Shopping</button>
+      <button class="tab" data-tab="settings">Settings</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ Pantry tab ============ -->
+    <section id="pantry" class="panel">
+      <div class="toolbar">
+        <input id="pantry-search" type="search" placeholder="Search the pantry…">
+        <select id="pantry-location" aria-label="Filter by location">
+          <option value="">Everywhere</option>
+        </select>
+        <button id="add-item-btn" class="primary">+ Add item</button>
+      </div>
+      <div id="pantry-list"></div>
+    </section>
+
+    <!-- ============ Cookbook tab ============ -->
+    <section id="recipes" class="panel" hidden>
+      <div class="toolbar">
+        <input id="recipe-search" type="search" placeholder="Search recipes or tags…">
+        <label class="check"><input id="can-make-only" type="checkbox"> Only what we can make now</label>
+        <button id="add-recipe-btn" class="primary">+ Add recipe</button>
+      </div>
+      <div id="recipe-list" class="cards"></div>
+    </section>
+
+    <!-- ============ Shopping tab ============ -->
+    <section id="shopping" class="panel" hidden>
+      <form id="shopping-form" class="toolbar">
+        <input id="shopping-input" placeholder="Add something to buy…" autocomplete="off">
+        <button class="primary">Add</button>
+      </form>
+      <h2>To buy</h2>
+      <ul id="shopping-list" class="rows"></ul>
+      <h2>Running low or out</h2>
+      <ul id="low-list" class="rows"></ul>
+    </section>
+
+    <!-- ============ Settings tab ============ -->
+    <section id="settings" class="panel" hidden>
+      <h2>Connect to GitHub</h2>
+      <p class="muted">
+        Your pantry and recipes are saved as two files in your GitHub repo
+        (<code>data/pantry.json</code> and <code>data/recipes.json</code>).
+        Each of you connects once per device with your own token. The token stays in this browser only.
+        See the README for step-by-step instructions.
+      </p>
+      <form id="settings-form" class="stack">
+        <label>Your first name <span class="muted">(shows up in the change history)</span>
+          <input name="name" placeholder="e.g. Sam">
+        </label>
+        <label>GitHub owner <span class="muted">(the account or organization that owns the repo)</span>
+          <input name="owner" placeholder="your-github-username" required>
+        </label>
+        <label>Repository name
+          <input name="repo" placeholder="our-pantry" required>
+        </label>
+        <label>Branch
+          <input name="branch" placeholder="main">
+        </label>
+        <label>Personal access token
+          <input name="token" type="password" placeholder="github_pat_…" autocomplete="off" required>
+        </label>
+        <div class="buttons">
+          <button class="primary">Save &amp; connect</button>
+          <button type="button" id="disconnect-btn" class="ghost">Disconnect this device</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============ Pop-up: add / edit a pantry item ============ -->
+  <dialog id="item-dialog">
+    <form id="item-form" class="stack">
+      <h2 id="item-dialog-title">Add item</h2>
+      <input type="hidden" name="id">
+      <label>Name <input name="name" required placeholder="e.g. Rice"></label>
+      <div class="two">
+        <label>How many <input name="quantity" type="number" min="0" step="any" value="1"></label>
+        <label>Unit <input name="unit" list="unit-options" placeholder="bag, can, lb…"></label>
+      </div>
+      <div class="two">
+        <label>Category <input name="category" list="category-options" placeholder="Baking"></label>
+        <label>Where it lives <select name="location" id="item-location"></select></label>
+      </div>
+      <div class="two">
+        <label>Warn me at or below <input name="lowAt" type="number" min="0" step="any" placeholder="e.g. 1"></label>
+        <label>Expires <input name="expires" type="date"></label>
+      </div>
+      <label>Notes <input name="notes" placeholder="Brand, size, anything"></label>
+      <div class="buttons">
+        <button class="primary">Save</button>
+        <button type="button" class="ghost" data-close>Cancel</button>
+        <button type="button" id="delete-item-btn" class="danger">Delete</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ============ Pop-up: add / edit a recipe ============ -->
+  <dialog id="recipe-dialog">
+    <form id="recipe-form" class="stack">
+      <h2 id="recipe-dialog-title">Add recipe</h2>
+      <input type="hidden" name="id">
+      <label>Recipe name <input name="name" required placeholder="e.g. Sunday pancakes"></label>
+      <div class="two">
+        <label>Serves <input name="servings" type="number" min="1" placeholder="4"></label>
+        <label>Time <input name="time" placeholder="30 min"></label>
+      </div>
+      <label>Tags <span class="muted">(comma separated)</span>
+        <input name="tags" placeholder="breakfast, quick, vegetarian">
+      </label>
+      <label>Ingredients <span class="muted">(one per line, like "2 cup flour" or "1 egg". Add "(optional)" if it's optional)</span>
+        <textarea name="ingredients" rows="7" required placeholder="1 1/2 cup flour&#10;2 eggs&#10;1 tsp salt&#10;chocolate chips (optional)"></textarea>
+      </label>
+      <label>Steps <span class="muted">(one per line)</span>
+        <textarea name="steps" rows="6" placeholder="Mix the dry ingredients.&#10;Whisk in the eggs and milk."></textarea>
+      </label>
+      <label>Notes or source link <input name="notes" placeholder="Grandma's version, or a website link"></label>
+      <div class="buttons">
+        <button class="primary">Save</button>
+        <button type="button" class="ghost" data-close>Cancel</button>
+        <button type="button" id="delete-recipe-btn" class="danger">Delete</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ============ Pop-up: view a recipe ============ -->
+  <dialog id="view-dialog">
+    <div id="view-body"></div>
+  </dialog>
+
+  <datalist id="unit-options"></datalist>
+  <datalist id="category-options"></datalist>
+
+  <script src="app.js"></script>
+</body>
+</html>

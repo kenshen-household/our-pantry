@@ -1,0 +1,146 @@
+/* ---------- Colors (light mode, then dark mode) ---------- */
+:root {
+  --bg: #faf7f2;
+  --card: #ffffff;
+  --text: #2b2620;
+  --muted: #7a7064;
+  --line: #e6dfd4;
+  --accent: #b5562b;
+  --accent-text: #ffffff;
+  --good: #2f7d4f;
+  --good-bg: #e3f3e8;
+  --warn: #9a6400;
+  --warn-bg: #fdf0d5;
+  --bad: #b3261e;
+  --bad-bg: #fbe3e1;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1a17;
+    --card: #27231f;
+    --text: #f1ebe3;
+    --muted: #a99e90;
+    --line: #3a342e;
+    --accent: #e07a4a;
+    --accent-text: #1d1a17;
+    --good: #7fd19b;
+    --good-bg: #1f3a2a;
+    --warn: #f0c060;
+    --warn-bg: #3d3115;
+    --bad: #f28b82;
+    --bad-bg: #432321;
+  }
+}
+
+/* ---------- Basics ---------- */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+header, main { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 16px; }
+h1 { font-size: 1.6rem; margin: 0; }
+h2 { font-size: 1.15rem; margin: 24px 0 8px; }
+h3 { font-size: 1rem; margin: 20px 0 6px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+code { background: var(--line); padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+.muted { color: var(--muted); font-size: .9em; }
+.title-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+
+/* ---------- Status line ---------- */
+.status { margin: 4px 0 10px; font-size: .88rem; color: var(--muted); min-height: 1.2em; }
+.status.ok { color: var(--good); }
+.status.warn { color: var(--warn); }
+.status.error { color: var(--bad); }
+
+/* ---------- Tabs ---------- */
+nav { display: flex; gap: 4px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+.tab {
+  background: none; border: none; border-bottom: 3px solid transparent;
+  padding: 10px 14px; font: inherit; color: var(--muted); cursor: pointer; border-radius: 0;
+}
+.tab.active { color: var(--text); border-bottom-color: var(--accent); font-weight: 600; }
+
+/* ---------- Buttons and inputs ---------- */
+button {
+  font: inherit; cursor: pointer; border-radius: 8px; padding: 8px 14px;
+  border: 1px solid var(--line); background: var(--card); color: var(--text);
+}
+button:hover { border-color: var(--muted); }
+button.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); font-weight: 600; }
+button.ghost { background: transparent; }
+button.danger { background: transparent; color: var(--bad); border-color: transparent; margin-left: auto; }
+button.small { padding: 4px 10px; font-size: .9rem; }
+input, select, textarea {
+  font: inherit; color: var(--text); background: var(--card);
+  border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; width: 100%;
+}
+textarea { resize: vertical; }
+input:focus, select:focus, textarea:focus, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 16px 0; }
+.toolbar input[type="search"], .toolbar #shopping-input { flex: 1 1 200px; width: auto; }
+.toolbar select { width: auto; }
+.check { display: flex; align-items: center; gap: 6px; font-size: .92rem; white-space: nowrap; }
+.check input { width: auto; }
+
+.stack { display: flex; flex-direction: column; gap: 12px; }
+.stack label { display: flex; flex-direction: column; gap: 4px; font-weight: 500; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 4px; }
+
+/* ---------- Pantry list ---------- */
+.items, .rows { list-style: none; margin: 0; padding: 0; }
+.item, .rows li {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 10px 12px; margin-bottom: 6px;
+}
+.item-main { flex: 1; min-width: 0; }
+.item-name { font-weight: 600; }
+.item-meta { font-size: .85rem; color: var(--muted); }
+.qty { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.qty span { min-width: 64px; text-align: center; }
+.qty button { width: 34px; height: 34px; padding: 0; font-size: 1.1rem; }
+.rows li .grow { flex: 1; }
+
+/* ---------- Little colored labels ---------- */
+.badge { display: inline-block; font-size: .75rem; font-weight: 600; padding: 1px 8px; border-radius: 99px; margin-left: 6px; vertical-align: 1px; }
+.badge.good { background: var(--good-bg); color: var(--good); }
+.badge.low, .badge.soon, .badge.short { background: var(--warn-bg); color: var(--warn); }
+.badge.out, .badge.expired, .badge.missing { background: var(--bad-bg); color: var(--bad); }
+.badge.tag { background: var(--line); color: var(--muted); font-weight: 500; margin: 0 4px 0 0; }
+
+/* ---------- Recipe cards ---------- */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.card {
+  text-align: left; display: flex; flex-direction: column; gap: 6px;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px;
+}
+.card h4 { margin: 0; font-size: 1.05rem; }
+.card .badge { margin-left: 0; }
+.card .missing-list { font-size: .85rem; color: var(--muted); }
+
+.empty { color: var(--muted); text-align: center; padding: 32px 0; }
+
+/* ---------- Pop-ups ---------- */
+dialog {
+  width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 48px);
+  border: 1px solid var(--line); border-radius: 14px; padding: 20px;
+  background: var(--card); color: var(--text);
+}
+dialog::backdrop { background: rgba(0, 0, 0, .45); }
+dialog h2 { margin-top: 0; }
+.ing-list { list-style: none; padding: 0; margin: 0 0 8px; }
+.ing-list li { padding: 4px 0; border-bottom: 1px dashed var(--line); }
+.ing-list .mark { display: inline-block; width: 1.4em; }
+.steps li { margin-bottom: 6px; }
+
+@media (max-width: 520px) {
+  .two { grid-template-columns: 1fr; }
+  .item { flex-wrap: wrap; }
+  .qty span { min-width: 48px; }
+}
