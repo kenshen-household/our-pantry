@@ -1,3 +1,534 @@
 {
-  "recipes": []
+  "recipes": [
+    {
+      "id": "mwsdzf17ig16",
+      "name": "Three-bean pantry chili",
+      "servings": 6,
+      "time": "40 min",
+      "tags": [
+        "dinner",
+        "make ahead"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "chili beans",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "mixed chili beans",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "black beans",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "corn",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "tomato paste",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "name": "packet chili seasoning",
+          "optional": false
+        },
+        {
+          "quantity": 2,
+          "unit": "cup",
+          "name": "chicken stock",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "name": "onion",
+          "optional": true
+        },
+        {
+          "quantity": 1,
+          "unit": "lb",
+          "name": "ground beef",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "If using onion or ground beef, brown them in a big pot.",
+        "Stir in the tomato paste and chili seasoning and cook 1 minute.",
+        "Add the chili beans (with their sauce), drained mixed beans, black beans and corn.",
+        "Pour in the stock, simmer 25 minutes, and season with salt and pepper."
+      ],
+      "notes": "",
+      "addedBy": ""
+    },
+    {
+      "id": "mwsdzf18nu2k",
+      "name": "15 bean soup",
+      "servings": 8,
+      "time": "3 hr (plus overnight soak)",
+      "tags": [
+        "dinner",
+        "soup",
+        "make ahead"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "unit": "bag",
+          "name": "15 bean soup",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "tomato paste",
+          "optional": false
+        },
+        {
+          "quantity": 8,
+          "unit": "cup",
+          "name": "chicken stock",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "name": "onion",
+          "optional": true
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "name": "ham hock",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Rinse the beans and soak overnight; set the seasoning packet aside.",
+        "Drain, then add the beans to a pot with the stock (top up with water) and the ham hock and onion if using.",
+        "Simmer about 2½ hours until tender.",
+        "Stir in the tomato paste and seasoning packet, simmer 30 more minutes."
+      ],
+      "notes": "",
+      "addedBy": ""
+    },
+    {
+      "id": "mwsdzf197bak",
+      "name": "Lentil and vegetable soup",
+      "servings": 6,
+      "time": "45 min",
+      "tags": [
+        "dinner",
+        "soup",
+        "vegetarian option"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "unit": "cup",
+          "name": "lentils",
+          "optional": false
+        },
+        {
+          "quantity": 4,
+          "unit": "cup",
+          "name": "chicken stock",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "potatoes",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "green beans",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "spinach",
+          "optional": false
+        },
+        {
+          "quantity": 2,
+          "unit": "tbsp",
+          "name": "tomato paste",
+          "optional": false
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "name": "kombu",
+          "optional": true
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "name": "onion",
+          "optional": true
+        },
+        {
+          "quantity": 2,
+          "unit": "",
+          "name": "carrots",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Rinse the lentils.",
+        "Simmer the lentils in the stock (with a strip of kombu if you like) for 20 minutes.",
+        "Add the drained potatoes, green beans, spinach and tomato paste, plus onion and carrots if using.",
+        "Simmer 15 more minutes, remove the kombu, and season with salt and pepper."
+      ],
+      "notes": "",
+      "addedBy": ""
+    },
+    {
+      "id": "mwsdzf19hvdd",
+      "name": "Mediterranean tuna couscous",
+      "servings": 3,
+      "time": "15 min",
+      "tags": [
+        "lunch",
+        "quick"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "unit": "box",
+          "name": "couscous mix",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "tuna",
+          "optional": false
+        },
+        {
+          "quantity": 0.25,
+          "unit": "cup",
+          "name": "sun-dried tomatoes",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "spinach",
+          "optional": true
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "name": "lemon",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Make the couscous mix as the box says.",
+        "Fold in the tuna with its olive oil and the chopped sun-dried tomatoes.",
+        "Add the drained spinach and a squeeze of lemon if you have them."
+      ],
+      "notes": "",
+      "addedBy": ""
+    },
+    {
+      "id": "mwsdzf19csfw",
+      "name": "Southwest farro salad",
+      "servings": 4,
+      "time": "35 min",
+      "tags": [
+        "lunch",
+        "vegetarian",
+        "make ahead"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "unit": "cup",
+          "name": "farro",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "black beans",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "corn",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "name": "packet fajita seasoning",
+          "optional": false
+        },
+        {
+          "quantity": 2,
+          "unit": "tbsp",
+          "name": "peanut oil",
+          "optional": false
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "name": "tortilla strips",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "name": "lime",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Simmer the farro in salted water about 25 minutes until chewy-tender, then drain.",
+        "Rinse the black beans and drain the corn.",
+        "Toss the farro, beans and corn with the oil, about half the fajita seasoning, and lime juice if you have it.",
+        "Top with tortilla strips right before serving."
+      ],
+      "notes": "",
+      "addedBy": ""
+    },
+    {
+      "id": "mwsdzf19n5v8",
+      "name": "Creamy sun-dried tomato fettuccine",
+      "servings": 4,
+      "time": "20 min",
+      "tags": [
+        "dinner",
+        "quick",
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "quantity": 0.5,
+          "unit": "box",
+          "name": "fettuccine",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "jar",
+          "name": "alfredo sauce",
+          "optional": false
+        },
+        {
+          "quantity": 0.25,
+          "unit": "cup",
+          "name": "sun-dried tomatoes",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "spinach",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "lb",
+          "name": "chicken",
+          "optional": true
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "name": "panko bread crumbs",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Cook the fettuccine.",
+        "Warm the alfredo sauce with the chopped sun-dried tomatoes and drained spinach (and cooked chicken if using).",
+        "Toss with the pasta; top with toasted panko for crunch."
+      ],
+      "notes": "",
+      "addedBy": ""
+    },
+    {
+      "id": "mwsdzf19bwo2",
+      "name": "Penne with white beans and garlic sauce",
+      "servings": 4,
+      "time": "20 min",
+      "tags": [
+        "dinner",
+        "quick",
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "unit": "box",
+          "name": "penne",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "jar",
+          "name": "pasta sauce",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "great northern beans",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "spinach",
+          "optional": false
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "name": "parmesan",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Cook the penne.",
+        "Heat the pasta sauce with the rinsed beans and drained spinach.",
+        "Toss with the penne and top with parmesan if you have it."
+      ],
+      "notes": "",
+      "addedBy": ""
+    },
+    {
+      "id": "mwsdzf19x5vf",
+      "name": "Pumpkin pancakes",
+      "servings": 4,
+      "time": "25 min",
+      "tags": [
+        "breakfast",
+        "vegetarian"
+      ],
+      "ingredients": [
+        {
+          "quantity": 2,
+          "unit": "cup",
+          "name": "pancake & waffle mix",
+          "optional": false
+        },
+        {
+          "quantity": 0.5,
+          "unit": "can",
+          "name": "pumpkin puree",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "cup",
+          "name": "milk",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "name": "egg",
+          "optional": true
+        },
+        {
+          "quantity": 0.3333333333333333,
+          "unit": "cup",
+          "name": "chocolate chips",
+          "optional": true
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "name": "date syrup",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Whisk the pumpkin with the milk (and egg if your mix calls for one).",
+        "Stir in the pancake mix until just combined; add a splash more milk if thick.",
+        "Cook on a greased pan over medium heat, sprinkling chocolate chips on top before flipping.",
+        "Serve with date syrup."
+      ],
+      "notes": "",
+      "addedBy": ""
+    },
+    {
+      "id": "mwsdzf197qdh",
+      "name": "Pumpkin pie steel-cut oats",
+      "servings": 4,
+      "time": "30 min",
+      "tags": [
+        "breakfast",
+        "vegetarian",
+        "make ahead"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "unit": "cup",
+          "name": "steel cut oats",
+          "optional": false
+        },
+        {
+          "quantity": 0.5,
+          "unit": "can",
+          "name": "pumpkin puree",
+          "optional": false
+        },
+        {
+          "quantity": 3,
+          "unit": "tbsp",
+          "name": "date syrup",
+          "optional": false
+        },
+        {
+          "quantity": 0.25,
+          "unit": "cup",
+          "name": "raisins",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "tbsp",
+          "name": "flaxseed",
+          "optional": true
+        },
+        {
+          "quantity": 1,
+          "unit": "tsp",
+          "name": "cinnamon",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Bring 4 cups water to a boil, add the oats, and simmer about 25 minutes, stirring now and then.",
+        "Stir in the pumpkin, date syrup, raisins, and cinnamon if you have it.",
+        "Top with flaxseed. Leftovers reheat well with a splash of water."
+      ],
+      "notes": "",
+      "addedBy": ""
+    }
+  ]
 }
