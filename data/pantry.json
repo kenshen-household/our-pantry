@@ -3,7 +3,7 @@
     {
       "id": "flour",
       "name": "Flour",
-      "quantity": 7,
+      "quantity": 6,
       "unit": "cup",
       "category": "Baking",
       "location": "Pantry",
