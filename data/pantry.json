@@ -344,7 +344,7 @@
     {
       "id": "mwsdwr28nfiz",
       "name": "Black beans",
-      "quantity": 1,
+      "quantity": 0,
       "unit": "can",
       "category": "Beans & legumes",
       "location": "Pantry",
@@ -443,7 +443,7 @@
     {
       "id": "mwsdwr28sdb2",
       "name": "Corn",
-      "quantity": 3,
+      "quantity": 2,
       "unit": "can",
       "category": "Canned goods",
       "location": "Pantry",
@@ -498,7 +498,7 @@
     {
       "id": "mwsdwr28khdr",
       "name": "Pumpkin puree",
-      "quantity": 3,
+      "quantity": 2,
       "unit": "can",
       "category": "Canned goods",
       "location": "Pantry",
@@ -531,7 +531,7 @@
     {
       "id": "mwsdwr28pijl",
       "name": "Sun-dried tomatoes",
-      "quantity": 1,
+      "quantity": 0.85,
       "unit": "bag",
       "category": "Canned goods",
       "location": "Pantry",
@@ -608,7 +608,7 @@
     {
       "id": "mwsdwr28moh0",
       "name": "Chicken stock",
-      "quantity": 1,
+      "quantity": 0.5,
       "unit": "carton",
       "category": "Soups & ready meals",
       "location": "Pantry",
@@ -773,7 +773,7 @@
     {
       "id": "mwsdwr28u10r",
       "name": "Chili seasoning",
-      "quantity": 1,
+      "quantity": 0.5,
       "unit": "packet",
       "category": "Spices & seasonings",
       "location": "Pantry",
@@ -806,7 +806,7 @@
     {
       "id": "mwsdwr280qh8",
       "name": "Fajita seasoning",
-      "quantity": 1,
+      "quantity": 0.5,
       "unit": "packet",
       "category": "Spices & seasonings",
       "location": "Pantry",
@@ -927,7 +927,7 @@
     {
       "id": "mwsdwr28uqne",
       "name": "Tortilla strips",
-      "quantity": 1,
+      "quantity": 0.5,
       "unit": "bag",
       "category": "Snacks",
       "location": "Pantry",
