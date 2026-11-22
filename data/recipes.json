@@ -529,6 +529,120 @@
       ],
       "notes": "",
       "addedBy": ""
+    },
+    {
+      "id": "mwsfkytyqmis",
+      "name": "Smoky pumpkin black bean soup with crunchy toppings",
+      "servings": 4,
+      "time": "30 min",
+      "tags": [
+        "dinner",
+        "soup",
+        "quick",
+        "pantry"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "unit": "tbsp",
+          "name": "peanut oil",
+          "optional": false
+        },
+        {
+          "quantity": 0.25,
+          "unit": "cup",
+          "name": "sun-dried tomatoes",
+          "optional": false
+        },
+        {
+          "quantity": 0.5,
+          "unit": "",
+          "name": "packet chili seasoning",
+          "optional": false
+        },
+        {
+          "quantity": 0.5,
+          "unit": "",
+          "name": "packet fajita seasoning",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "pumpkin puree",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "black beans",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "can",
+          "name": "corn",
+          "optional": false
+        },
+        {
+          "quantity": 2,
+          "unit": "cup",
+          "name": "chicken stock",
+          "optional": false
+        },
+        {
+          "quantity": 1,
+          "unit": "tsp",
+          "name": "date syrup",
+          "optional": false
+        },
+        {
+          "quantity": 0.5,
+          "unit": "bag",
+          "name": "tortilla strips",
+          "optional": false
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "name": "honey roasted mixed nuts",
+          "optional": true
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "name": "onion",
+          "optional": true
+        },
+        {
+          "quantity": 1,
+          "unit": "",
+          "name": "lime",
+          "optional": true
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "name": "sour cream",
+          "optional": true
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "name": "cilantro",
+          "optional": true
+        }
+      ],
+      "steps": [
+        "Heat the peanut oil in a pot over medium. If you have an onion, dice it and cook 5 minutes until soft.",
+        "Add the chopped sun-dried tomatoes plus the chili and fajita seasonings. Stir for 1 minute so the spices wake up and smell toasty.",
+        "Add the pumpkin, chicken stock, drained black beans and HALF the drained corn. Simmer 15 minutes.",
+        "Meanwhile, char the rest of the corn in a dry skillet over high heat until it has brown spots (3–4 minutes). Toss with a pinch of fajita seasoning.",
+        "Mash about half the soup with a potato masher to make it thick and creamy. Stir in the date syrup and taste; add salt or a squeeze of lime if it needs a lift.",
+        "Toppings bar: charred corn, tortilla strips, crushed honey-roasted nuts, plus lime, sour cream and cilantro if you have them. Everyone builds their own bowl."
+      ],
+      "notes": "Sweet-smoky and creamy without any cream. The charred corn and crunchy toppings make it fun.",
+      "addedBy": ""
     }
   ]
 }
